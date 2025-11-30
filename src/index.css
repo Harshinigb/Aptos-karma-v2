@@ -1,0 +1,162 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
+
+@layer base {
+  :root {
+    /* Lavender & Purple Color Palette */
+    --background: 250 100% 99%;
+    --foreground: 262 83% 22%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 262 83% 22%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 262 83% 22%;
+    
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 250 100% 97%;
+    --secondary-foreground: 262 83% 22%;
+    
+    --muted: 250 100% 96%;
+    --muted-foreground: 262 20% 45%;
+    
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 262 30% 90%;
+    --input: 262 30% 90%;
+    --ring: 262 83% 58%;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 262 83% 8%;
+    --foreground: 250 100% 99%;
+    --card: 262 83% 12%;
+    --card-foreground: 250 100% 99%;
+    --popover: 262 83% 12%;
+    --popover-foreground: 250 100% 99%;
+    --primary: 250 100% 99%;
+    --primary-foreground: 262 83% 22%;
+    --secondary: 262 83% 20%;
+    --secondary-foreground: 250 100% 99%;
+    --muted: 262 83% 15%;
+    --muted-foreground: 262 30% 70%;
+    --accent: 262 83% 30%;
+    --accent-foreground: 250 100% 99%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 250 100% 99%;
+    --border: 262 83% 20%;
+    --input: 262 83% 20%;
+    --ring: 262 83% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, hsl(250, 100%, 99%) 0%, hsl(250, 100%, 97%) 100%);
+    min-height: 100vh;
+    margin: 0;
+  padding: 0;
+  }
+}
+
+@layer components {
+  .glass-card {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+      0 4px 6px -1px rgba(139, 92, 246, 0.1),
+      0 2px 4px -1px rgba(139, 92, 246, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(262, 83%, 45%) 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(262, 100%, 85%) 0%, hsl(262, 83%, 58%) 100%);
+  }
+
+  .gradient-success {
+    background: linear-gradient(135deg, hsl(142, 76%, 60%) 0%, hsl(142, 76%, 45%) 100%);
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(250, 100%, 99%) 0%, hsl(250, 100%, 97%) 50%, hsl(250, 100%, 95%) 100%);
+  }
+
+  .shadow-glow {
+    box-shadow: 
+      0 0 20px rgba(139, 92, 246, 0.15),
+      0 4px 6px -1px rgba(139, 92, 246, 0.1);
+  }
+
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 8px 25px rgba(139, 92, 246, 0.15),
+      0 4px 6px -1px rgba(139, 92, 246, 0.1);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(262, 83%, 45%) 0%, hsl(262, 83%, 58%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-glow {
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.1);
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+  .dashboard-header {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1; /* This ensures it stays behind content */
+}
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

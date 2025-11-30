@@ -1,0 +1,4 @@
+id,userId,amount,duration,interestRate,totalRepayable,dueDate,status,appliedAt
+1,1,8000,30,2.5,8200,2024-02-14,approved,2024-01-15
+2,2,5000,15,2.5,5125,2024-01-30,repaid,2024-01-10
+3,3,12000,45,2.3,12414,2024-03-01,pending,2024-01-16

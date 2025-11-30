@@ -1,0 +1,4 @@
+id,walletAddress,creditScore,totalDeliveries,averageRating,patTokens,tier,monthlyEarnings,onTimeRate
+1,0x742d35Cc6634C0532925a3b8D,785,1247,4.9,12470,gold,45000,98.5
+2,0x89205A3A3b2A69De6Dbf7f01ED,720,856,4.7,8560,silver,38000,96.2
+3,0xde0B295669a9FD93d5F28D9Ec,810,1523,5.0,15230,platinum,52000,99.1

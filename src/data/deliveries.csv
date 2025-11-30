@@ -1,0 +1,5 @@
+id,userId,platform,ordersCount,averageRating,shift,date,status,patReward,earnings
+1,1,swiggy,12,5.0,evening,2024-01-15,verified,120,1800
+2,1,zomato,8,4.8,morning,2024-01-14,verified,80,1200
+3,1,swiggy,15,5.0,weekend,2024-01-13,pending,150,2250
+4,2,zomato,10,4.7,evening,2024-01-15,verified,100,1500
