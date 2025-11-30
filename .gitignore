@@ -1,0 +1,101 @@
+# --------------------------
+# Python
+# --------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+venv/
+.env/
+.env.backup/
+*.env
+
+# Bytecode
+*$py.class
+
+# --------------------------
+# FastAPI / Uvicorn
+# --------------------------
+*.log
+logs/
+uvicorn.log
+
+# --------------------------
+# Aptos Blockchain Keys
+# --------------------------
+*.pem
+*.key
+*.der
+*.msp
+aptos.key
+private.key
+public.key
+secret.key
+wallet.key
+.mnemonic
+keystore/
+keystore.json
+
+# Do NOT commit your oracle private key
+oracle_private_key.txt
+
+# --------------------------
+# Photon & API Secrets
+# --------------------------
+PHOTON_API_KEY.txt
+photon_secrets.txt
+
+# --------------------------
+# IDE / Editor
+# --------------------------
+.vscode/
+.idea/
+*.iml
+
+# --------------------------
+# OS System Files
+# --------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# Cached Data
+# --------------------------
+.cache/
+*.sqlite3
+__pypackages__/
+
+# --------------------------
+# Tests
+# --------------------------
+.coverage
+pytest_cache/
+htmlcov/
+
+# --------------------------
+# Environment Specific
+# --------------------------
+.env.local
+.env.development
+.env.production
+
+# --------------------------
+# Project Specific
+# --------------------------
+backend/__pycache__/
+backend/oracle/__pycache__/
+backend/api/__pycache__/
+backend/aptos/__pycache__/
+backend/photon/__pycache__/
+
+# Ignore compiled Move bytecode (if stored)
+move/build/
+*.mv
+*.bcs
